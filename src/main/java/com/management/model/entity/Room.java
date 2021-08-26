@@ -1,5 +1,6 @@
 package com.management.model.entity;
 
+import com.management.model.dtos.RoomDto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -24,5 +25,6 @@ public class Room {
 
     @ManyToOne(optional = false)
     private Branch branch;
+
 
 }
