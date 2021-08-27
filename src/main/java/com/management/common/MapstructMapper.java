@@ -1,8 +1,10 @@
 package com.management.common;
 
 import com.management.model.dtos.BranchDto;
+import com.management.model.dtos.CourseDto;
 import com.management.model.dtos.RoomDto;
 import com.management.model.entity.Branch;
+import com.management.model.entity.Course;
 import com.management.model.entity.Room;
 import org.mapstruct.Mapper;
 import org.mapstruct.ReportingPolicy;
@@ -16,4 +18,6 @@ public interface MapstructMapper {
       Branch toBranch(BranchDto branchDto);
 
       Room toRoom(RoomDto roomDto);
+
+      Course toCourse(CourseDto courseDto);
 }
